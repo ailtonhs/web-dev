@@ -2,6 +2,7 @@
 
 
 @media screen and (min-width: 768px) {
+   
     .burguer {
         display: none;
     }
@@ -14,9 +15,8 @@
 
     #menu {
         display: block;
-    }
-
-    #menu a {
         margin-top: 0;
     }
+
+    
 }
