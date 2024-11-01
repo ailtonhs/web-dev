@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Idade</title>
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="query.css">
+    
+</head>
+
+<body onresize="larguraTotal()">
+    <div class="main">
+        <header>
+            <nav class="navbar">
+                <div class="logo-burguer">
+                    <div>
+                        <h1>AiltonHS</h1>
+                    </div>
+                    <div class="burguer" onclick="clickMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div>
+                    <ul id="menu">
+                        <li><a href="sobre.html" target="_self" rel="next">Sobre</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <form action="projeto.php">
+                    <div class="conteiner">
+                        <div>
+                            <h1>Calculadora de Idade</h1>
+                        </div>
+                        <div>
+                            <label for="inome">Nome:</label>
+                            <input type="text" id="inome" name="nome" placeholder="nome">
+                        </div>
+                        <div>
+                            <label for="iano">Ano:</label>
+                            <input type="number" id="iano" name="ano" placeholder="1992">
+                        </div>
+                        <div>
+                            <label for="imes">Mês:</label>
+                            <input type="number" id="imes" name="mes" placeholder="11">
+                        </div>
+                        <div>
+                            <label for="idia">Dia:</label>
+                            <input type="number" id="idia" name="idia" placeholder="23">
+                        </div>
+
+                        <div>
+                            <fieldset>
+                                <legend>Selecione seu sexo:</legend>
+
+                                <label for="mas"> Masculino
+                                    <input type="radio" name="isexo" id="mas" value="masculino" checked>
+                                </label>
+
+                                <label for="fem"> Feminino
+                                    <input type="radio" name="isexo" id="fem" value="feminino">
+                                </label>
+                            </fieldset>
+                        </div>
+
+                        <div>
+                            <input type="button" value="Verificar" id="funcao">
+                        </div>
+                        <div>
+                            <p id="res">Resultado vem aqui...</p>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+
+        <footer>
+            <p>&copy; AiltonHS</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
