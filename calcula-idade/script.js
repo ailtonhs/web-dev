@@ -46,7 +46,7 @@ function minhaFuncao() {
     let res = document.getElementById("res");
 
     if (nome == "" || ano == "" || mes == "" || dia == "") {
-        alert("[ERRO] Faltam dados!");
+        swal("ERRO", "Faltam dados!", "error");
 
     } else {
         if (radsex[0].checked) {
